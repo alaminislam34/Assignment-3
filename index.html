@@ -3,7 +3,212 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Assignment 3</title>
+    <!-- Tailwind CSS and DaisyUi cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-09b459cf485d4b1f3304947240314c05.css?vsn=d"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css"
+    />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Customize Tailwind CSS -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              primary3: "#ABEF5F",
+              dark: "#494949",
+            },
+            fontFamily: {
+              manrope: "Manrope",
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body></body>
+  <body class="font-manrope">
+    <!-- Header Section -->
+    <header class="w-11/12 mx-auto bg-gradient-to-b to-[#ffffff]">
+      <nav class="my-6">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <a class="text-xl flex gap-1">
+              <i
+                class="fa-regular fa-arrow-up-right bg-primary3 py-[4px] px-[6px] text-black rounded-full"
+              ></i>
+              <h3 class="text-[28px] lg:text-[32px] font-extrabold">
+                Rinterio
+              </h3>
+            </a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="flex gap-6 cursor-pointer text-[#737373]">
+              <li>
+                <a
+                  class="hover:text-black hover:font-bold transition ease-in-out duration-300"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-black hover:font-bold transition ease-in-out duration-300"
+                  >Service</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-black hover:font-bold transition ease-in-out duration-300"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-black hover:font-bold transition ease-in-out duration-300"
+                  >Blogs</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-black hover:font-bold transition ease-in-out duration-300"
+                  >About Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end space-x-3">
+            <div class="space-x-3 hidden md:block">
+              <i
+                class="fa-sharp fa-regular fa-magnifying-glass p-2 rounded-full bg-white shadow text-[#737373]"
+              ></i>
+              <i
+                class="fa-regular fa-cart-shopping p-2 rounded-full bg-white shadow text-[#737373]"
+              ></i>
+              <a
+                class="btn font-extrabold bg-primary3 rounded-full hover:bg-slate-300 hover:text-black"
+                >Book Consult
+                <i
+                  class="fa-regular fa-arrow-up-right bg-black py-[4px] px-[6px] text-white rounded-full"
+                ></i
+              ></a>
+            </div>
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <i class="fa-solid fa-bars text-xl text-[#737373]"></i>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content right-0 bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li>
+                  <a
+                    class="hover:text-black hover:font-bold transition ease-in-out duration-300"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:text-black hover:font-bold transition ease-in-out duration-300"
+                    >Service</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:text-black hover:font-bold transition ease-in-out duration-300"
+                    >Portfolio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:text-black hover:font-bold transition ease-in-out duration-300"
+                    >Blogs</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:text-black hover:font-bold transition ease-in-out duration-300"
+                    >About Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Banner Section -->
+      <section
+        class="flex flex-col text-center justify-center space-y-4 md:mt-12 md:mb-20 mt-8 mb-12"
+      >
+        <img
+          class="w-10/12 md:w-8/12 mx-auto"
+          src="./assets/banner.png"
+          alt=""
+        />
+        <h1
+          class="text-[28px] sm:text-4xl lg:text-6xl font-extrabold md:w-11/12 mx-auto"
+        >
+          A barn house of this design has a striking appearance
+        </h1>
+        <p class="text-dark sm:text-base text-sm md:w-9/12 mx-auto">
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal accents, and
+          large windows that flood the space with natural light.
+        </p>
+        <div>
+          <button class="md:py-3 md:px-5 py-2 px-4 bg-[#d9f99d] rounded-full">
+            View Details
+            <i
+              class="fa-regular fa-arrow-up-right bg-primary3 py-[4px] px-[6px] text-black rounded-full"
+            ></i>
+          </button>
+        </div>
+      </section>
+    </header>
+  </body>
 </html>
