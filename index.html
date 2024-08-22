@@ -65,6 +65,7 @@
               primary3: "#ABEF5F",
               dark: "#494949",
               bgd: "#F4F4F4",
+              dark2: "#737373",
             },
             fontFamily: {
               manrope: "Manrope",
@@ -218,8 +219,9 @@
     </header>
     <!-- Main Section -->
     <main>
-      <!-- Section one our design -->
+      <!-- Section one -->
       <section class="bg-bgd relative">
+        <!-- We design thoughtful -->
         <div class="w-11/12 mx-auto my-10">
           <div class="absolute lg:left-[3%] lg:top-[6%] hidden lg:block">
             <img class="" src="./assets/Vector.png" />
@@ -229,10 +231,10 @@
           >
             <div class="space-y-4 lg:text-left text-center py-6">
               <a
-                class="cursor-pointer py-2 px-3 bg-white rounded-full font-bold"
+                class="cursor-pointer py-2 px-3 bg-white rounded-full font-bold text-dark"
                 ><i class="fa-sharp fa-regular fa-arrow-right"></i> About Us</a
               >
-              <h2 class="text-3xl lg:text-4xl font-bold">
+              <h2 class="text-3xl lg:text-4xl font-extrabold">
                 We design thoughtful, liveable spaces
               </h2>
               <p class="text-dark text-sm lg:text-base">
@@ -243,15 +245,14 @@
               <div class="flex lg:flex-col sm:flex-row flex-col gap-8 pt-5">
                 <!-- Card 1 -->
                 <div
-                  class="flex md:gap-3 gap-2 text-left bg-white md:p-6 p-3 rounded-xl"
+                  class="flex md:gap-3 gap-2 text-left items-start lg:items-center bg-white md:p-6 p-3 rounded-xl"
                 >
-                  <img
-                    class="lg:w-16 w-10 h-full"
-                    src="./assets/commercial.png"
-                  />
+                  <img class="lg:w-16 w-10" src="./assets/commercial.png" />
                   <div class="space-y-1">
-                    <h4 class="font-bold text-lg lg:text-xl">Commercial</h4>
-                    <p class="text-dark text-sm lg:text-base">
+                    <h4 class="font-bold text-lg lg:text-xl text-dark">
+                      Commercial
+                    </h4>
+                    <p class="text-dark2 text-sm lg:text-base">
                       The barn house captivates with its blend of rustic charm
                       and modern.
                     </p>
@@ -262,12 +263,14 @@
                   class="flex md:gap-3 gap-2 text-left bg-white md:p-6 p-3 rounded-xl"
                 >
                   <img
-                    class="lg:w-16 w-10 h-full"
+                    class="lg:w-16 w-10 h-full sm:h-11 lg:h-full"
                     src="./assets/residential.png"
                   />
                   <div class="space-y-1">
-                    <h4 class="font-bold text-lg lg:text-xl">Residential</h4>
-                    <p class="text-dark text-sm lg:text-base">
+                    <h4 class="font-bold text-lg lg:text-xl text-dark">
+                      Residential
+                    </h4>
+                    <p class="text-dark2 text-sm lg:text-base">
                       The barn house captivates with its blend of rustic charm
                       and modern.
                     </p>
@@ -284,6 +287,103 @@
             </div>
           </div>
         </div>
+        <br />
+        <!-- Our Review section -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-around text-center bg-white w-11/12 mx-auto py-12 rounded-xl"
+        >
+          <div class="space-y-1 lg:space-y-2">
+            <i class="fa-light fa-message-lines text-dark2 text-2xl"></i>
+            <h2 class="font-extrabold lg:text-4xl text-[32px] text-dark">
+              235+
+            </h2>
+            <p class="text-dark2 font-medium text-[16px]">
+              Happy Client Review
+            </p>
+          </div>
+          <div class="space-y-1 lg:space-y-2">
+            <i class="fa-light fa-warehouse text-dark2 text-2xl"></i>
+            <h2 class="font-extrabold lg:text-4xl text-[32px] text-dark">
+              50+
+            </h2>
+            <p class="text-dark2 font-medium text-[16px]">Word Departments</p>
+          </div>
+          <div class="space-y-1 lg:space-y-2">
+            <i class="fa-light fa-users text-dark2 text-2xl"></i>
+            <h2 class="font-extrabold lg:text-4xl text-[32px] text-dark">
+              30k+
+            </h2>
+            <p class="text-dark2 font-medium text-[16px]">Our Happy Client</p>
+          </div>
+          <div class="space-y-1 lg:space-y-2">
+            <i class="fa-light fa-user-group text-dark2 text-2xl"></i>
+            <h2 class="font-extrabold lg:text-4xl text-[32px] text-dark">
+              307+
+            </h2>
+            <p class="text-dark2 font-medium text-[16px]">Staff Members</p>
+          </div>
+        </div>
+        <br /><br /><br />
+        <!-- Our Work Process -->
+        <div class="w-11/12 mx-auto">
+          <div class="text-center space-y-4 my-4">
+            <a
+              class="cursor-pointer py-2 px-3 bg-white rounded-full font-bold text-dark"
+              ><i class="fa-sharp fa-regular fa-arrow-right"></i> How we
+              works</a
+            >
+            <br />
+            <h2 class="text-3xl lg:text-4xl font-extrabold">
+              Our Works Process
+            </h2>
+            <p class="text-dark text-sm lg:text-base lg:w-6/12 mx-auto">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mx-auto"
+          >
+            <div class="space-y-2 bg-[#E7C1D3] p-4 rounded-2xl">
+              <img src="./assets/concept.png" />
+              <h4 class="text-xl font-extrabold text-[#1C1C1C]">Concept</h4>
+              <p class="text-dark">
+                The barn house captivates with its blend of rustic charm and
+                modern.
+              </p>
+            </div>
+            <div class="space-y-2 bg-[#EFDA6E] p-4 rounded-2xl">
+              <img src="./assets/flow-chart.png" />
+              <h4 class="text-xl font-extrabold text-[#1C1C1C]">
+                Design Process
+              </h4>
+              <p class="text-dark">
+                The barn house captivates with its blend of rustic charm and
+                modern.
+              </p>
+            </div>
+            <div class="space-y-2 bg-[#A4DAC3] p-4 rounded-2xl">
+              <img src="./assets/vision.png" />
+              <h4 class="text-xl font-extrabold text-[#1C1C1C]">Supervision</h4>
+              <p class="text-dark">
+                The barn house captivates with its blend of rustic charm and
+                modern.
+              </p>
+            </div>
+            <div class="space-y-2 bg-[#77AAEA] p-4 rounded-2xl">
+              <img src="./assets/budget-planning.png" />
+              <h4 class="text-xl font-extrabold text-[#1C1C1C]">
+                Budget Planning
+              </h4>
+              <p class="text-dark">
+                The barn house captivates with its blend of rustic charm and
+                modern.
+              </p>
+            </div>
+          </div>
+        </div>
+        <br /><br />
       </section>
     </main>
   </body>
