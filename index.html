@@ -64,6 +64,7 @@
               clifford: "#da373d",
               primary3: "#ABEF5F",
               dark: "#494949",
+              bgd: "#F4F4F4",
             },
             fontFamily: {
               manrope: "Manrope",
@@ -73,9 +74,12 @@
       };
     </script>
   </head>
-  <body class="font-manrope">
+
+  <body class="font-manrope bg-[#fff]">
     <!-- Header Section -->
-    <header class="w-11/12 mx-auto bg-gradient-to-b to-[#ffffff]">
+    <header
+      class="w-11/12 mx-auto bg-gradient-to-b from-[#ffffff] to-[#ffffff]"
+    >
       <nav class="my-6">
         <div class="navbar bg-base-100">
           <div class="navbar-start">
@@ -125,13 +129,13 @@
           <div class="navbar-end space-x-3">
             <div class="space-x-3 hidden md:block">
               <i
-                class="fa-sharp fa-regular fa-magnifying-glass p-2 rounded-full bg-white shadow text-[#737373] cursor-pointer"
+                class="fa-sharp fa-regular fa-magnifying-glass p-2 rounded-full bg-white shadow text-[#737373] cursor-pointer hover:text-black"
               ></i>
               <i
-                class="fa-regular fa-cart-shopping p-2 rounded-full bg-white shadow text-[#737373] cursor-pointer"
+                class="fa-regular fa-cart-shopping p-2 rounded-full bg-white shadow text-[#737373] cursor-pointer hover:text-black"
               ></i>
               <a
-                class="btn font-extrabold bg-primary3 rounded-full hover:bg-slate-300 hover:text-black"
+                class="btn font-extrabold bg-primary3 rounded-full hover:bg-[#d9f99d] hover:text-black"
                 >Book Consult
                 <i
                   class="fa-regular fa-arrow-up-right bg-black py-[4px] px-[6px] text-white rounded-full"
@@ -202,7 +206,7 @@
         </p>
         <div>
           <button
-            class="md:py-3 md:px-5 py-2 px-4 bg-[#d9f99d] rounded-full font-extrabold"
+            class="md:py-3 md:px-5 py-2 px-4 bg-[#d9f99d] hover:bg-primary3 rounded-full font-extrabold"
           >
             View Details
             <i
@@ -212,5 +216,75 @@
         </div>
       </section>
     </header>
+    <!-- Main Section -->
+    <main>
+      <!-- Section one our design -->
+      <section class="bg-bgd relative">
+        <div class="w-11/12 mx-auto my-10">
+          <div class="absolute lg:left-[3%] lg:top-[6%] hidden lg:block">
+            <img class="" src="./assets/Vector.png" />
+          </div>
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center justify-center lg:py-24"
+          >
+            <div class="space-y-4 lg:text-left text-center py-6">
+              <a
+                class="cursor-pointer py-2 px-3 bg-white rounded-full font-bold"
+                ><i class="fa-sharp fa-regular fa-arrow-right"></i> About Us</a
+              >
+              <h2 class="text-3xl lg:text-4xl font-bold">
+                We design thoughtful, liveable spaces
+              </h2>
+              <p class="text-dark text-sm lg:text-base">
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal
+                accents.
+              </p>
+              <div class="flex lg:flex-col sm:flex-row flex-col gap-8 pt-5">
+                <!-- Card 1 -->
+                <div
+                  class="flex md:gap-3 gap-2 text-left bg-white md:p-6 p-3 rounded-xl"
+                >
+                  <img
+                    class="lg:w-16 w-10 h-full"
+                    src="./assets/commercial.png"
+                  />
+                  <div class="space-y-1">
+                    <h4 class="font-bold text-lg lg:text-xl">Commercial</h4>
+                    <p class="text-dark text-sm lg:text-base">
+                      The barn house captivates with its blend of rustic charm
+                      and modern.
+                    </p>
+                  </div>
+                </div>
+                <!-- Card 2 -->
+                <div
+                  class="flex md:gap-3 gap-2 text-left bg-white md:p-6 p-3 rounded-xl"
+                >
+                  <img
+                    class="lg:w-16 w-10 h-full"
+                    src="./assets/residential.png"
+                  />
+                  <div class="space-y-1">
+                    <h4 class="font-bold text-lg lg:text-xl">Residential</h4>
+                    <p class="text-dark text-sm lg:text-base">
+                      The barn house captivates with its blend of rustic charm
+                      and modern.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mx-auto w-full overflow-hidden rounded-xl">
+              <img
+                class="w-full md:h-96 h-64 sm:h-80 lg:h-full object-cover"
+                src="./assets/Rectangle.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
