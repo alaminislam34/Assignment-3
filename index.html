@@ -66,6 +66,9 @@
               dark: "#494949",
               bgd: "#F4F4F4",
               dark2: "#737373",
+              dib: "#212121",
+              dib2: "#1C1C1C",
+              bod: "1px solid rgb(233, 233, 233)",
             },
             fontFamily: {
               manrope: "Manrope",
@@ -76,19 +79,20 @@
     </script>
   </head>
 
-  <body class="font-manrope bg-[#fff]">
+  <body class="font-manrope">
     <!-- Header Section -->
-    <header
-      class="w-11/12 mx-auto bg-gradient-to-b from-[#ffffff] to-[#ffffff]"
-    >
-      <nav class="my-6">
-        <div class="navbar bg-base-100">
+    <header class="bg-gradient-to-b from-[#F4F4F4] to-[#FFFFFF]">
+      <!-- navbar style -->
+      <nav class="w-11/12 mx-auto py-8">
+        <div class="navbar">
           <div class="navbar-start">
             <a class="text-xl flex gap-1 cursor-pointer">
               <i
                 class="fa-regular fa-arrow-up-right bg-primary3 py-[4px] px-[6px] text-black rounded-full"
               ></i>
-              <h3 class="text-[28px] lg:text-[32px] font-extrabold">
+              <h3
+                class="text-[28px] lg:text-[32px] font-extrabold tracking-tight text-dib"
+              >
                 Rinterio
               </h3>
             </a>
@@ -97,55 +101,57 @@
             <ul class="flex gap-6 cursor-pointer text-[#737373]">
               <li>
                 <a
-                  class="hover:text-black hover:font-bold transition ease-in-out duration-300"
+                  class="hover:text-black hover:font-bold transition ease-in-out duration-300 text-[16px]"
                   >Home</a
                 >
               </li>
               <li>
                 <a
-                  class="hover:text-black hover:font-bold transition ease-in-out duration-300"
+                  class="hover:text-black hover:font-bold transition ease-in-out duration-300 text-[16px]"
                   >Service</a
                 >
               </li>
               <li>
                 <a
-                  class="hover:text-black hover:font-bold transition ease-in-out duration-300"
+                  class="hover:text-black hover:font-bold transition ease-in-out duration-300 text-[16px]"
                   >Portfolio</a
                 >
               </li>
               <li>
                 <a
-                  class="hover:text-black hover:font-bold transition ease-in-out duration-300"
+                  class="hover:text-black hover:font-bold transition ease-in-out duration-300 text-[16px]"
                   >Blogs</a
                 >
               </li>
               <li>
                 <a
-                  class="hover:text-black hover:font-bold transition ease-in-out duration-300"
+                  class="hover:text-black hover:font-bold transition ease-in-out duration-300 text-[16px]"
                   >About Us</a
                 >
               </li>
             </ul>
           </div>
           <div class="navbar-end space-x-3">
-            <div class="space-x-3 hidden md:block">
+            <div class="space-x-2 hidden md:flex items-center">
               <i
-                class="fa-sharp fa-regular fa-magnifying-glass p-2 rounded-full bg-white shadow text-[#737373] cursor-pointer hover:text-black"
+                class="text-sm fa-sharp fa-regular fa-magnifying-glass py-[7px] px-[10px] rounded-full border-[1px solid rgb(233, 233, 233)] bg-[#FFFFFF] shadow text-[#737373] cursor-pointer hover:text-black"
               ></i>
               <i
-                class="fa-regular fa-cart-shopping p-2 rounded-full bg-white shadow text-[#737373] cursor-pointer hover:text-black"
+                class="text-sm fa-regular fa-cart-shopping py-[7px] px-[10px] rounded-full bg-[#FFFFFF] border-[1px solid rgb(233, 233, 233)] shadow text-[#737373] cursor-pointer hover:text-black"
               ></i>
               <a
-                class="btn font-extrabold bg-primary3 rounded-full hover:bg-[#d9f99d] hover:text-black"
+                class="btn font-extrabold bg-primary3 rounded-full hover:bg-[#d9f99d] text-dib2 text-xl tracking-tight"
                 >Book Consult
                 <i
-                  class="fa-regular fa-arrow-up-right bg-black py-[4px] px-[6px] text-white rounded-full"
+                  class="fa-regular fa-arrow-up-right bg-dib py-[4px] px-[8px] text-white rounded-full text-sm"
                 ></i
               ></a>
             </div>
             <div class="dropdown">
               <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <i class="fa-solid fa-bars text-xl text-[#737373]"></i>
+                <i
+                  class="fa-solid fa-bars text-xl text-[#838383] bg-[#FFFFFF] py-2 px-[14px] rounded-full border-[1px solid rgb(233, 233, 233)]"
+                ></i>
               </div>
               <ul
                 tabindex="0"
@@ -153,31 +159,31 @@
               >
                 <li>
                   <a
-                    class="hover:text-black hover:font-bold transition ease-in-out duration-300"
+                    class="hover:text-black hover:font-bold transition ease-in-out duration-300 text-[16px]"
                     >Home</a
                   >
                 </li>
                 <li>
                   <a
-                    class="hover:text-black hover:font-bold transition ease-in-out duration-300"
+                    class="hover:text-black hover:font-bold transition ease-in-out duration-300 text-[16px]"
                     >Service</a
                   >
                 </li>
                 <li>
                   <a
-                    class="hover:text-black hover:font-bold transition ease-in-out duration-300"
+                    class="hover:text-black hover:font-bold transition ease-in-out duration-300 text-[16px]"
                     >Portfolio</a
                   >
                 </li>
                 <li>
                   <a
-                    class="hover:text-black hover:font-bold transition ease-in-out duration-300"
+                    class="hover:text-black hover:font-bold transition ease-in-out duration-300 text-[16px]"
                     >Blogs</a
                   >
                 </li>
                 <li>
                   <a
-                    class="hover:text-black hover:font-bold transition ease-in-out duration-300"
+                    class="hover:text-black hover:font-bold transition ease-in-out duration-300 text-[16px]"
                     >About Us</a
                   >
                 </li>
@@ -188,7 +194,7 @@
       </nav>
       <!-- Banner Section -->
       <section
-        class="flex flex-col text-center justify-center space-y-4 md:mt-12 md:mb-20 mt-8 mb-12"
+        class="flex flex-col w-11/12 mx-auto text-center justify-center space-y-4 md:mt-12 md:mb-20 mb-12"
       >
         <img
           class="w-10/12 md:w-8/12 mx-auto"
@@ -196,7 +202,7 @@
           alt=""
         />
         <h1
-          class="text-[28px] sm:text-4xl lg:text-6xl font-extrabold md:w-11/12 mx-auto"
+          class="text-[28px] sm:text-[36px] lg:text-[64px] font-extrabold tracking-tight lg:leading-[87px] md:leading-[49px] leading-[32px] text-[#212121]"
         >
           A barn house of this design has a striking appearance
         </h1>
@@ -223,7 +229,7 @@
       <section class="bg-bgd relative">
         <!-- We design thoughtful -->
         <div class="w-11/12 mx-auto my-10">
-          <div class="absolute lg:left-[3%] lg:top-[6%] hidden lg:block">
+          <div class="absolute lg:left-[3%] lg:top-[3%] hidden lg:block">
             <img class="" src="./assets/Vector.png" />
           </div>
           <div
@@ -234,7 +240,9 @@
                 class="cursor-pointer py-2 px-3 bg-white rounded-full font-bold text-dark"
                 ><i class="fa-sharp fa-regular fa-arrow-right"></i> About Us</a
               >
-              <h2 class="text-3xl lg:text-4xl font-extrabold">
+              <h2
+                class="text-[24px] md:text-[32px] lg:text-[40px] font-extrabold tracking-tight lg:leading-[55px] leading-[33px] text-[#212121]"
+              >
                 We design thoughtful, liveable spaces
               </h2>
               <p class="text-dark text-sm lg:text-base">
@@ -333,7 +341,9 @@
               works</a
             >
             <br />
-            <h2 class="text-3xl lg:text-4xl font-extrabold">
+            <h2
+              class="text-3xl lg:text-4xl font-extrabold tracking-tighter text-[#212121]"
+            >
               Our Works Process
             </h2>
             <p class="text-dark text-sm lg:text-base lg:w-6/12 mx-auto">
@@ -381,6 +391,78 @@
                 modern.
               </p>
             </div>
+          </div>
+        </div>
+        <br /><br />
+      </section>
+      <br /><br />
+      <!-- Our Latest Portfolio Title -->
+      <section>
+        <div class="text-center space-y-4">
+          <a
+            class="cursor-pointer py-2 px-3 bg-[#eefcdf] rounded-full font-bold text-dark"
+            ><i class="fa-sharp fa-regular fa-arrow-right"></i> Explore our
+            latest works</a
+          >
+          <h2
+            class="text-[24px] md:text-[32px] lg:text-[40px] font-black tracking-tight text-[#212121]"
+          >
+            Our Latest Portfolio
+          </h2>
+          <p
+            class="text-dark text-sm lg:text-base lg:w-6/12 md:w-10/12 w-11/12 mx-auto"
+          >
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+        <br />
+
+        <!-- Our Latest Portfolio Design -->
+        <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-8 w-11/12 mx-auto">
+          <div
+            class="flex flex-col gap-4 sm:flex-row border outline-[#E9E9E9] rounded-xl p-6 lg:col-span-3 sm:col-span-2 bg-red-300"
+          >
+            <div class="w-full">
+              <img class="h-[175px] w-full" src="./assets/img1.png" alt="" />
+              <br />
+            </div>
+            <div class="">
+              <h4>Commercial</h4>
+              <br />
+              <p>
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal
+                accents.
+              </p>
+              <br />
+              <a class="rounded-full font-extrabold">
+                View Details
+                <i
+                  class="fa-regular fa-arrow-up-right bg-primary3 py-[4px] px-[6px] text-black rounded-full"
+                ></i>
+              </a>
+            </div>
+          </div>
+          <div class="border outline-[#E9E9E9] rounded-xl p-6 bg-red-300">
+            div-2
+          </div>
+          <div class="border outline-[#E9E9E9] rounded-xl p-6 bg-red-300">
+            <h2 class="hidden lg:block">div-3</h2>
+            <h2 class="lg:hidden">Extra div</h2>
+          </div>
+          <div
+            class="border outline-[#E9E9E9] rounded-xl p-6 sm:col-span-2 bg-red-300"
+          >
+            div-4
+          </div>
+          <div class="border outline-[#E9E9E9] rounded-xl p-6 bg-red-300">
+            <h2>div-5</h2>
+          </div>
+          <div
+            class="lg:hidden border outline-[#E9E9E9] rounded-xl p-6 bg-red-300"
+          >
+            div-6
           </div>
         </div>
         <br /><br />
