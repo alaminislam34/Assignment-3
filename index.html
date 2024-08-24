@@ -139,13 +139,14 @@
               <i
                 class="text-sm fa-regular fa-cart-shopping py-[7px] px-[10px] rounded-full bg-[#FFFFFF] border-[1px solid rgb(233, 233, 233)] shadow text-[#737373] cursor-pointer hover:text-black"
               ></i>
-              <a
+              <button
                 class="btn font-extrabold bg-primary3 rounded-full hover:bg-[#d9f99d] text-dib2 text-xl tracking-tight"
-                >Book Consult
+              >
+                Book Consult
                 <i
                   class="fa-regular fa-arrow-up-right bg-dib py-[4px] px-[8px] text-white rounded-full text-sm"
-                ></i
-              ></a>
+                ></i>
+              </button>
             </div>
             <div class="dropdown">
               <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -527,7 +528,7 @@
         <br /><br />
       </section>
       <!-- Section Three>>> Our Articles and News-->
-      <section class="bg-[#f4f4f4] md:py-12 lg:py-20 mb-4">
+      <section class="bg-[#f4f4f4] md:py-12 lg:py-20 mb-2">
         <div class="w-11/12 mx-auto">
           <!-- Article and News title section  -->
           <div class="text-center">
@@ -671,6 +672,80 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <!-- Discuss Section -->
+      <section
+        style="
+          background-image: url(./assets/bg.jpg);
+          background-position: center;
+          background-size: cover;
+        "
+        class=""
+      >
+        <div class="py-8 md:py-16 lg:py-24">
+          <!-- Content -->
+          <div class="text-center">
+            <a
+              class="cursor-pointer py-2 px-3 bg-[#E5F3D6] rounded-full font-bold text-dark inline-block"
+              ><i class="fa-sharp fa-regular fa-arrow-right"></i> Let's
+              Connect</a
+            >
+            <h2
+              class="text-[#212121] font-extrabold lg:text-[40px] tracking-tight md:text-[32] text-2xl pt-4"
+            >
+              Let's Discuss Next Project
+            </h2>
+            <p
+              class="font-medium text-dark pt-6 lg:w-7/12 md:w-10/12 w-11/12 mx-auto"
+            >
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+            <br />
+          </div>
+          <!-- Input box -->
+          <form
+            class="md:grid flex flex-col w-11/12 gap-6 md:grid-cols-2 lg:w-9/12 md:w-10/12 mx-auto"
+          >
+            <input
+              class="rounded-full lg:p-5 py-4 px-5 font-medium text-[#A0A0A0]"
+              type="text"
+              placeholder="First Name*"
+            />
+            <input
+              class="rounded-full lg:p-5 py-4 px-5 font-medium text-[#A0A0A0]"
+              type="text"
+              placeholder="Last Name*"
+            />
+            <input
+              class="rounded-full lg:p-5 py-4 px-5 font-medium text-[#A0A0A0]"
+              type="number"
+              placeholder="Phone Number*"
+            />
+            <input
+              class="rounded-full lg:p-5 py-4 px-5 font-medium text-[#A0A0A0]"
+              type="email"
+              placeholder="Email Address"
+            />
+            <textarea
+              name="comment"
+              cols="2"
+              rows="6"
+              placeholder="Write your message here"
+              class="col-span-2 lg:p-5 py-4 px-5 rounded-2xl"
+            ></textarea>
+            <button
+              type="submit"
+              class="btn font-extrabold bg-primary3 rounded-full hover:bg-[#a6ff00] text-dib2 text-xl tracking-tight col-span-2"
+            >
+              Send Mail
+              <i
+                class="fa-regular fa-arrow-up-right bg-dib py-[4px] px-[8px] text-white rounded-full text-sm"
+              ></i>
+            </button>
+          </form>
         </div>
       </section>
     </main>
